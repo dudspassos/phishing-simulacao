@@ -4,43 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RIB-MG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #ffffff; /* Fundo branco */
-            color: #000000; /* Letras pretas */
-            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            font-family: 'Open Sans', sans-serif;
             text-align: center;
             padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            flex-direction: column;
         }
-        h1 {
-            font-size: 2.5em;
-        }
-        p {
-             margin-bottom: 30px;
-        }
-        a {
-            background-color: #f0f0f0; /* Fundo do botão do link cinza claro */
-            color: #000000; /* Letras do botão pretas */
-            padding: 15px 25px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            display: inline-block;
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 90%;
             margin-top: 20px;
         }
-        a:hover {
-            background-color: #e0e0e0; /* Cor do botão ao passar o mouse */
-        }
         img {
-            max-width: 250px; /* Define um tamanho máximo para a logo */
-            margin-bottom: 20px; /* Adiciona um espaço abaixo da logo */
+            max-width: 250px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        a {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            display: inline-block;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+        }
+        a:hover {
+            background-color: #0056b3;
+            box-shadow: 0 6px 8px rgba(0, 123, 255, 0.3);
+            transform: translateY(-2px);
         }
     </style>
 </head>
 <body>
-    <img src="RIB_MG AZUL.png" alt="Logo RIB-MG">
-    <h1>VOCÊ CAIU EM UMA SIMULAÇÃO DE PHISHING</h1>
-    <p>Este é um teste de conscientização em segurança da informação</p>
-    <a href="fasciculo-phishing-golpes.pdf" target="_blank">Clique aqui para ver o fascículo sobre phishing e outros golpes</a>
+    <div class="container">
+        <img src="RIB_MG AZUL.png" alt="Logo RIB-MG">
+        <h1>VOCÊ CAIU EM UMA SIMULAÇÃO DE PHISHING</h1>
+        <p>Este é um teste de conscientização em segurança da informação.</p>
+        <a href="fasciculo-phishing-golpes.pdf" target="_blank">Clique aqui para ver o fascículo sobre phishing e outros golpes</a>
+    </div>
 </body>
 </html>
